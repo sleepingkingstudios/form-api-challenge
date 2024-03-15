@@ -1,4 +1,4 @@
-import { http } from 'msw';
+import { http, HttpResponse } from 'msw';
 
 import {
   buildResponse,
