@@ -1,4 +1,6 @@
-import { generateUrl } from './utils';
+/** @module form-api/query */
+
+import { generateUrl } from './utils.js';
 
 const baseUrl = 'https://api.fillout.com';
 const endpoint = 'v1/api/forms/:formId/submissions';
