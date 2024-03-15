@@ -1,4 +1,4 @@
-/** @module form-api/aggregate */
+/** @module form-api */
 
 /**
  * Queries for all of the form responses for a form ID matching the query params.

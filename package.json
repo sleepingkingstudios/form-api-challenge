@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "ci": "yarn test && yarn lint",
-    "docs": "jsdoc README.md src -d ./docs",
+    "docs": "yarn run jsdoc README.md src -r -d ./docs",
     "lint": "yarn run eslint",
     "start": "node src/index.js",
     "test": "yarn node --experimental-vm-modules $(yarn bin jest)"

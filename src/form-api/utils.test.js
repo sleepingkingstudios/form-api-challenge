@@ -26,6 +26,23 @@ describe('api utils', () => {
           generateUrl({ baseUrl, endpoint, queryParameters })
         ).toEqual(expected);
       });
+
+      describe('with query parameters including undefined values', () => {
+        const queryParameters = {
+          limit: 10,
+          offset: 20,
+          sort: 'asc',
+          afterDate: undefined,
+        };
+
+        it('generates the url with query parameters', () => {
+          const expected = `${baseUrl}/${endpoint}?${expectedParams}`;
+
+          expect(
+            generateUrl({ baseUrl, endpoint, queryParameters })
+          ).toEqual(expected);
+        });
+      });
     });
 
     describe('with extra wildcards', () => {

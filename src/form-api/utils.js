@@ -1,4 +1,4 @@
-/** @module form-api/utils */
+/** @module form-api */
 
 const applyWildcards = ({ url, wildcards = {} }) => {
   let expected =
@@ -36,6 +36,7 @@ const mergeQueryParameters = ({ queryParameters }) => {
   const merged =
     Object
     .entries(queryParameters)
+    .filter(([parameter, value]) => value !== undefined)
     .map(
       ([parameter, value]) => encodeURI(`${parameter}=${value}`)
     )

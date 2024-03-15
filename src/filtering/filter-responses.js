@@ -1,4 +1,4 @@
-/** @module filtering/filter-responses */
+/** @module filtering */
 
 const applyFilter = (responses, filter) => responses.filter(
   (response) => {
