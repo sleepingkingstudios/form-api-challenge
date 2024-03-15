@@ -1,4 +1,4 @@
-/** @module form-api/query */
+/** @module form-api */
 
 import { generateUrl } from './utils.js';
 

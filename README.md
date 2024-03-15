@@ -14,3 +14,7 @@
 - To run the Jest unit tests, run `yarn test`.
 - To run the ESLint code linter, run `yarn lint`.
 - The `yarn ci` command runs the CI steps in sequence.
+
+## Generating The Docs
+
+- Run `yarn docs`. The generated documentation will be available in `docs/index.html`.

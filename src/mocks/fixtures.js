@@ -1,4 +1,4 @@
-/** @module mocks/fixtures */
+/** @module mocks */
 
 /**
  * Generates a valid API response.

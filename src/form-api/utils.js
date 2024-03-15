@@ -1,4 +1,4 @@
-/** @module form-api/utils */
+/** @module form-api */
 
 const applyWildcards = ({ url, wildcards = {} }) => {
   let expected =
