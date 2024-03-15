@@ -1,0 +1,25 @@
+{
+  "name": "fillout",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "form-api-challenge",
+  "main": "src/index.js",
+  "repository": "https://github.com/sleepingkingstudios/form-api-challenge",
+  "author": "rob.smith@sleepingkingstudios",
+  "license": "MIT",
+  "scripts": {
+    "ci": "yarn test && yarn lint",
+    "docs": "jsdoc README.md src -d ./docs",
+    "lint": "yarn run eslint",
+    "start": "node src/index.js",
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)"
+  },
+  "dependencies": {
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.2"
+  }
+}
