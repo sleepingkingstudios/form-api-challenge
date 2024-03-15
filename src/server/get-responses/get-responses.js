@@ -1,4 +1,4 @@
-/** @module server/get-responses/get-responses */
+/** @module server/get-responses */
 
 import {
   aggregateQuery,

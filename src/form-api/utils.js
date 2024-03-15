@@ -36,6 +36,7 @@ const mergeQueryParameters = ({ queryParameters }) => {
   const merged =
     Object
     .entries(queryParameters)
+    .filter(([parameter, value]) => value !== undefined)
     .map(
       ([parameter, value]) => encodeURI(`${parameter}=${value}`)
     )
