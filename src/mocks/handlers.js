@@ -81,6 +81,7 @@ export const handlers = [
       const response = buildResponse({
         pageCount,
         responses: limited,
+        totalResponses: filtered.length,
       });
 
       return HttpResponse.json(response);
